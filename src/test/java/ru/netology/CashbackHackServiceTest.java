@@ -1,8 +1,8 @@
 package ru.netology;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
 
@@ -19,7 +19,7 @@ public class CashbackHackServiceTest {
         System.out.println("Buy more at " + actual + "$ for get bonus!");
     }
 
-    @Test
+
     public void shouldTestRightRemain() {
         // Сумма покупки 1000$, докупать не требуется
         int expected = test.remain(1000);
@@ -30,7 +30,7 @@ public class CashbackHackServiceTest {
         System.out.println("Buy more at " + actual + "$ for get bonus!");
     }
 
-    @Test
+
     public void shouldTestMoreAndMoreRemain() {
         // Сумма покупки 1001$, требуется докупить
         int expected = test.remain(1001);
